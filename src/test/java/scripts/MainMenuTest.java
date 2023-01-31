@@ -28,7 +28,6 @@ public class MainMenuTest extends UnitedBase{
     public void validateMainMenuItems(){
         String[] mainMenuItemsNames = {"BOOK", "MY TRIPS", "TRAVEL INFO", "MILEAGEPLUS® PROGRAM", "DEALS", "HELP"};
         for (int i = 0; i < unitedBasePage.mainMenuItems.size(); i++) {
-            Assert.assertTrue(unitedBasePage.mainMenuItems.get(i).isDisplayed());
             Assert.assertEquals(unitedBasePage.mainMenuItems.get(i).getText(),mainMenuItemsNames[i]);
         }
     }

@@ -11,17 +11,17 @@ public class UnitedBasePage {
     public UnitedBasePage(){
         PageFactory.initElements(Driver.getDriver(), this);
     }
-    @FindBy(css = "div[class*='3SjnI'] a")
+    @FindBy(css = "a[id*='headerNav']")
     public List<WebElement> mainMenuItems;
-    @FindBy(css = "ul[class*='3RNBj'] li")
+    @FindBy(css = "ul[class*='3RNBj']>li")
     public List<WebElement> bookTravelMenuItems;
     @FindBy(css = "div[class*='3WXQM'] input")
     public List<WebElement> radioButtonsInput;
     @FindBy(css = "label[class*='VrnUD']")
     public List<WebElement> radioButtonsLabel;
     @FindBy(id = "award")
-    public WebElement bookWithMilesCheckbox;
-    @FindBy(css = "div[class*='2SGSV'] span")
+    public WebElement bookWithMilesCheckbox; // input[class*='box']
+    @FindBy(css = "div[class*='2SGSV'] span")  // div[class*='checkboxWrapper'] label
     public WebElement bookWithMilesLabel;
     @FindBy(id = "flexibleDates")
     public WebElement flexibleDatesCheckbox;
