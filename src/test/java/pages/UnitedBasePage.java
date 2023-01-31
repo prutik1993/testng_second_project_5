@@ -37,7 +37,6 @@ public class UnitedBasePage {
     public WebElement travelersSelector;
     @FindBy(xpath = "//button[@aria-label='Substract one Adult']")
     public WebElement plusOneAdult;
-
     @FindBy(id = "cabinType")
     public WebElement cabinTypeDropdownButton;
     @FindBy(css = ".app-components-ListBox-ListBox__listBoxExpandable--38-ZN>li")
